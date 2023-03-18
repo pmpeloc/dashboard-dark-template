@@ -7,6 +7,7 @@ import { LayoutAdmin } from './layouts/LayoutAdmin';
 // Pages
 import { Login } from './pages/auth/Login';
 import { Register } from './pages/auth/Register';
+import { RecoveryPassword } from './pages/auth/RecoveryPassword';
 
 // Pages admin
 import { Home } from './pages/admin/Home';
@@ -20,6 +21,7 @@ function App() {
         <Route path='/auth' element={<LayoutAuth />}>
           <Route index element={<Login />} />
           <Route path='register' element={<Register />} />
+          <Route path='recovery-password' element={<RecoveryPassword />} />
         </Route>
         <Route path='/' element={<LayoutAdmin />}>
           <Route index element={<Home />} />

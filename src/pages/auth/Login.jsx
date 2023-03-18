@@ -29,7 +29,7 @@ export const Login = () => {
   return (
     <div className='bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[540px]'>
       <h1 className='text-3xl uppercase font-bold tracking-[5px] text-white mb-8 text-center'>
-        Iniciar sesión
+        Iniciar <span className='text-primary'>sesión</span>
       </h1>
       <form className='mb-8'>
         <button className='flex items-center justify-center py-3 px-4 gap-4 bg-secondary-900 text-gray-100 w-full rounded-full mb-8'>
@@ -66,7 +66,9 @@ export const Login = () => {
         </div>
       </form>
       <div className='flex flex-col items-center gap-4'>
-        <Link to='/' className='hover:text-primary transition-colors'>
+        <Link
+          to='/auth/recovery-password'
+          className='hover:text-primary transition-colors'>
           ¿Olvidaste tu contraseña?
         </Link>
         <span className='flex items-center gap-2'>
