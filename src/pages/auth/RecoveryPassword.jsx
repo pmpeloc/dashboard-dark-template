@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Icons
-import {
-  RiEyeFill,
-  RiEyeOffFill,
-  RiLockFill,
-  RiMailFill,
-} from 'react-icons/ri';
+import { RiMailFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 export const RecoveryPassword = () => {
-  const [isShowPassword, setIsShowPassword] = useState(false);
-
   return (
     <div className='bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[540px]'>
       <h1 className='text-3xl uppercase font-bold tracking-[5px] text-white mb-8 text-center'>
