@@ -7,10 +7,10 @@ import {
   RiBarChart2Fill,
   RiCalendarTodoFill,
   RiCloseFill,
+  RiCustomerService2Line,
   RiEarthFill,
   RiLogoutCircleLine,
   RiMenuFill,
-  RiMessage3Fill,
 } from 'react-icons/ri';
 
 export const Sidebar = () => {
@@ -86,7 +86,7 @@ export const Sidebar = () => {
               <Link
                 to='/'
                 className='flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors'>
-                <RiMessage3Fill className='text-primary' /> Message
+                <RiCustomerService2Line className='text-primary' /> Support
               </Link>
             </li>
             <li>
