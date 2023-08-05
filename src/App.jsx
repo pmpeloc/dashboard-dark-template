@@ -13,6 +13,7 @@ import { RecoveryPassword } from './pages/auth/RecoveryPassword';
 import { Home } from './pages/admin/Home';
 import { Error404 } from './pages/Error404';
 import { Chat } from './pages/admin/Chat';
+import { Profile } from './pages/admin/Profile';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </Route>
         <Route path='/' element={<LayoutAdmin />}>
           <Route index element={<Home />} />
+          <Route path='profile' element={<Profile />} />
           <Route path='chat' element={<Chat />} />
         </Route>
         <Route path='*' element={<Error404 />} />
